@@ -1,0 +1,20 @@
+{
+	"schemaVersion": 1,
+	"id": "billow-selftest",
+	"version": "1.0.0",
+	"name": "Billow self test",
+	"description": "Development-only in-world checks for Billow. Not shipped.",
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.billow.selftest.fabric.BillowSelfTestFabric"
+		]
+	},
+	"depends": {
+		"billow": "*"
+	},
+	"mixins": [
+		"billow_selftest.mixins.json"
+	]
+}

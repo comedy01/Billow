@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="billow_selftest"
+version="1.0.0"
+displayName="Billow self test"
+
+[[mixins]]
+config="billow_selftest.mixins.json"

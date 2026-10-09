@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "dev.billow.selftest.mixin",
+	"compatibilityLevel": "JAVA_${java_version}",
+	"client": [
+		"MinecraftFrameMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

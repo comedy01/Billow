@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "billow",
+	"version": "${version}",
+	"name": "Billow",
+	"description": "Better clouds. Pick a cloud style: soft rounded clouds, realistic puffy cumulus, or clouds shaped like creeper heads, hearts and more. Set the cloud height, thickness, speed and opacity. Client-side only.",
+	"icon": {
+		"16": "assets/billow/icon16.png",
+		"32": "assets/billow/icon32.png",
+		"128": "assets/billow/icon128.png"
+	},
+	"authors": [
+		"comedy01"
+	],
+	"license": "MIT",
+	"contact": {
+		"homepage": "https://github.com/comedy01/Billow",
+		"sources": "https://github.com/comedy01/Billow",
+		"issues": "https://github.com/comedy01/Billow/issues"
+	},
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.billow.fabric.BillowFabric"
+		],
+		"modmenu": [
+			"dev.billow.fabric.BillowModMenu"
+		]
+	},
+	"mixins": [
+		"billow.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"fabric-api": "*",
+		"minecraft": "${range}",
+		"java": ">=${java_version}"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
